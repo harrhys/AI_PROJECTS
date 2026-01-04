@@ -1,4 +1,5 @@
 /.metadata/*
+**/__pycache__
 *.class
 *.log
 *.index
@@ -8,3 +9,4 @@
 /.metadata/
 **/node_modules/
 **/env*/
+**/.git/
