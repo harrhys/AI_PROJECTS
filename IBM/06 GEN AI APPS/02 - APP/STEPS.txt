@@ -1,0 +1,47 @@
+echo. > demo.py
+echo. > Dockerfile
+echo. > requirements.txt
+
+Open and add below line in requirements.txt file
+gradio==4.44.0 
+
+pip3 install -r requirements.txt
+
+Open and add below code in demo.py file
+
+## start
+
+import gradio as gr
+
+def greet(name, intensity):
+    return "Hello, " + name + "!" * int(intensity)
+
+demo = gr.Interface(
+    fn=greet,
+    inputs=["text", "slider"],
+    outputs=["text"],
+)
+
+demo.launch(server_name="0.0.0.0", server_port= 7860)
+
+##end
+
+python3 demo.py
+
+Open the Dockerfile and paste the following commands into the file.
+
+##START
+
+FROM python:3.10
+
+WORKDIR /app
+COPY requirements.txt requirements.txt
+RUN pip3 install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+CMD ["python", "demo.py"]
+
+##END
+
+

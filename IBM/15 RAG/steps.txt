@@ -1,0 +1,5 @@
+virtualenv env15
+env15\Scripts\activate
+pip install jupyter
+pip install ipykernel
+python -m ipykernel install --user --name=env15 --display-name "env15"

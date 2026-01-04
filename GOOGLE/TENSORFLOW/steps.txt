@@ -1,0 +1,5 @@
+virtualenv tfenv
+tfenv\Scripts\activate
+pip install jupyter
+pip install ipykernel
+python -m ipykernel install --user --name=tfenv --display-name "tfenv"

@@ -1,0 +1,5 @@
+virtualenv env91
+env91\Scripts\activate
+pip install jupyter
+pip install ipykernel
+python -m ipykernel install --user --name=env91 --display-name "env91"

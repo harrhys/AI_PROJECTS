@@ -1,0 +1,8 @@
+virtualenv env41
+env41\Scripts\activate
+
+pip install matplotlib==3.5.0
+pip install jupyter
+pip install ipykernel
+
+python -m ipykernel install --user --name=env41 --display-name "env41"

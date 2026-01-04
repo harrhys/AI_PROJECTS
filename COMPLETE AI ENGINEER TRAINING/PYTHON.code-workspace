@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"name": "PYTHON",
+			"path": "../PYTHON"
+		},
+		{
+			"name": "NLP",
+			"path": "../NLP"
+		},
+		{
+			"name": "LLMS",
+			"path": "../LLMS"
+		}
+	],
+	"settings": {}
+}

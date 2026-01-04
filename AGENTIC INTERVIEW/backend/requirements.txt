@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic
+whisper
+sentence-transformers
+pymilvus
+llama-cpp-python
+sqlalchemy

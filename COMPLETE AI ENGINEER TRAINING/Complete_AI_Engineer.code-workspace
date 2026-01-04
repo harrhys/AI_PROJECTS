@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../PYTHON"
+		},
+		{
+			"path": "../NLP"
+		},
+		{
+			"path": "../LLMS"
+		},
+		{
+			"path": "../LANGCHAIN"
+		},
+		{
+			"path": "../IBM"
+		}
+	]
+}

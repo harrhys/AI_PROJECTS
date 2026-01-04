@@ -1,0 +1,23 @@
+<template name="dashboard">
+<div class="bg-white p-6 rounded shadow mb-6">
+<div class="flex justify-between items-center mb-4">
+<h2 class="text-xl font-semibold">Dashboard</h2>
+<button id="exportCsv" class="bg-green-600 text-white p-2 rounded hover:bg-green-700">Export CSV</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
+<div class="bg-blue-100 p-4 rounded text-center">
+<p class="text-gray-700">Total Spending</p>
+<p id="totalSpending" class="text-2xl font-bold"></p>
+</div>
+<div class="bg-purple-100 p-4 rounded text-center">
+<p class="text-gray-700">This Month</p>
+<p id="monthlySpending" class="text-2xl font-bold"></p>
+</div>
+<div class="bg-yellow-100 p-4 rounded text-center">
+<p class="text-gray-700">Top Category</p>
+<p id="topCategory" class="text-2xl font-bold"></p>
+</div>
+</div>
+<canvas id="categoryChart"></canvas>
+</div>
+</template>
