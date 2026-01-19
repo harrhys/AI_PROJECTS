@@ -1,0 +1,16 @@
+# Create a virtual environment and install required packages
+#https://www.coursera.org/learn/vector-databases-for-rag-an-introduction
+
+virtualenv env1702
+env1701\Scripts\activate
+pip install jupyter
+pip install ipykernel
+python -m ipykernel install --user --name=env1702--display-name "env1702"
+Set-ExecutionPolicy -Scope CurrentUser -ExecutionPolicy RemoteSigned
+
+# Install project specific libraries
+pip install numpy==2.3.1
+pip install scipy==1.16.0
+pip install chromadb==1.0.12
+pip install sentence-transformers==4.1.0
+pip install ibm-watsonx-ai==1.3.24
